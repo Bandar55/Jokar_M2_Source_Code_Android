@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.MapProfessinalWorkerActivity">
+
+<RelativeLayout
+    android:id="@+id/rey_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionBarBackgroundColor"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar_map_layout" />
+
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>
+
+
+<fragment
+    android:id="@+id/mapview"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/rey_layout"
+    android:apiKey="AIzaSyDPf4CCfDhwAE95PYIQqapM_ixUUt4er20" />
+
+
+<RelativeLayout
+    android:id="@+id/r_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rey_layout"
+    android:layout_marginTop="@dimen/dp_20"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/rlMainPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@drawable/edit_txt_back"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/imgPickupLocationIcon"
+            android:layout_width="@dimen/iv_icon_width"
+            android:layout_height="@dimen/iv_icon_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/pickup_un"
+            android:tag="mwar" />
+
+
+        <com.mobu.jokar.view.RobotoRegularEditText
+            android:id="@+id/edtPickupLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toRightOf="@+id/imgPickupLocationIcon"
+            android:background="@null"
+            android:textSize="@dimen/text_size_medium"
+            android:textColorHint="@color/blacklight"
+            android:hint="Enter your PickUp Location"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toStartOf="@+id/imgPickuptimeIcon"
+            android:background="@color/dividerColor" />
+
+
+        <ImageView
+            android:id="@+id/imgPickuptimeIcon"
+            android:layout_width="@dimen/iv_icon_width"
+            android:layout_height="@dimen/dp_28"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/time_un"
+            android:tag="mwar" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlMainDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMainPickup"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/edit_txt_back"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/imgDownLocationIcon"
+            android:layout_width="@dimen/iv_icon_width"
+            android:layout_height="@dimen/iv_icon_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drop_un"
+            android:tag="mwar" />
+
+
+        <com.mobu.jokar.view.RobotoRegularEditText
+            android:id="@+id/edtDownLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blacklight"
+            android:textColorHint="@color/blacklight"
+            android:layout_marginStart="@dimen/dp_10"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_toRightOf="@+id/imgDownLocationIcon"
+            android:background="@null"
+            android:hint="Enter your DropOff Location"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_toStartOf="@+id/imgDroptimeIcon"
+            android:background="@color/dividerColor" />
+
+
+        <ImageView
+            android:id="@+id/imgDroptimeIcon"
+            android:layout_width="@dimen/iv_icon_width"
+            android:layout_height="@dimen/iv_icon_height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/time_un"
+            android:tag="mwar" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlMainSelectService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMainPickup"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/edit_txt_back"
+        android:gravity="center"
+        android:padding="@dimen/dp_15">
+
+        <ImageView
+            android:id="@+id/imgDestinationLocationIcon"
+            android:layout_width="@dimen/iv_icon_width"
+            android:layout_height="@dimen/iv_icon_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:scaleType="fitCenter"
+            android:src="@drawable/services"
+            android:tag="mwar" />
+
+
+        <com.mobu.jokar.view.RobotoRegularTextView
+            android:id="@+id/edtDestinationLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_toRightOf="@+id/imgDestinationLocationIcon"
+            android:background="@null"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/blacklight"
+            android:text="Select Service"
+            android:singleLine="true" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:visibility="gone"
+            android:layout_toStartOf="@+id/imgDestinationTimeIcon"
+            android:background="@color/dividerColor" />
+
+        <ImageView
+            android:id="@+id/imgDestinationTimeIcon"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/iv_icon_height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:scaleType="fitCenter"
+            android:src="@drawable/down_arrow"
+            android:tag="mwar" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:padding="@dimen/dp_5">
+
+
+        <com.mobu.jokar.view.RobotoRegularTextView
+            android:id="@+id/tv_select_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_txt_back"
+            android:hint="Select Time"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/black"
+            android:padding="@dimen/dp_20" />
+
+
+        <com.mobu.jokar.view.RobotoRegularEditText
+            android:id="@+id/edt_addDetails"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_90"
+            android:layout_below="@+id/tv_select_time"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/map_desc_back"
+            android:hint="Add details of the order"
+            android:textColorHint="@color/blacklight"
+            android:paddingBottom="@dimen/dp_55"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_15" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_addDetails"
+            android:layout_marginTop="@dimen/dp_10">
+
+
+            <ImageView
+                android:id="@+id/btnComments"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="@drawable/back_btn" />
+
+            <ImageView
+                android:id="@+id/btn_go_order"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_toRightOf="@+id/btnComments" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CaptionProfileActivity">
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rey_layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.design.widget.AppBarLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/actionBarBackgroundColor"-->
+            <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+            <!--<include layout="@layout/toolbar_map_layout" />-->
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--</RelativeLayout>-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/rey_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@color/actionBarBackgroundColor"
+        android:gravity="start"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/dp_15"
+            android:src="@drawable/back" />
+
+
+        <com.mobu.jokar.view.RobotoRegularTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/caption_profile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_large" />
+
+
+
+         <com.mobu.jokar.view.RobotoSemiBoldTextView
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="end"
+            android:padding="@dimen/dp_10"
+            android:text="@string/save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_18" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:id="@+id/l_layout"
+        android:layout_below="@+id/rey_layout"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.mobu.jokar.view.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/tv_deliverman"
+            android:gravity="center"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/canvas_offer_btn_background"
+            android:layout_height="wrap_content"
+            android:text="I'M Deliveryman"/>
+
+        <com.mobu.jokar.view.RobotoRegularTextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tv_professional"
+            android:padding="@dimen/dp_15"
+            android:textSize="@dimen/text_size_medium"
+            android:background="@drawable/canvas_offer_btn_background"
+            android:layout_height="wrap_content"
+            android:text="I'M Professional"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/l_layout"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

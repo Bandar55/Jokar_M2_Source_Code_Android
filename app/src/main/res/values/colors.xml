@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#C073F8</color>
+    <!--<color name="colorPrimary">#8D00C1</color>-->
+    <color name="colorPrimaryDark">#a95edf</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="colorbox">#8E16BC</color>
+    <color name="yellow">#EBBF28</color>
+
+
+    <color name="grey_light">#B6B2B2</color>
+
+
+    <color name="colorPrimaryThin">#e0adf2</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="actionBarBackgroundColor">#a95edf</color>
+    <color name="black">#000000</color>
+    <color name="blacklight">#595858</color>
+    <color name="dividerColor">#C9C9C8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey_btn">#E3E3E3</color>
+    <color name="trasperancy">#4D000000</color>
+
+    <color name="color_transparant">#39FFFFFF</color>
+    <color name="colorPink">#BF6DF9</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorLightGreen">#E4E4E4</color>
+    <color name="colorBlue">#8E16BC</color>
+
+    <color name="purpalMedium">#B56AE9</color>
+    <color name="colortext">#646464</color>
+    <color name="greyline">#D8D8D8</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="greylight">#E8E8E8</color>
+    <color name="textgrey">#95989A</color>
+    <color name="hintgrey">#E4E4E4</color>
+    <color name="green">#07B20D</color>
+    <color name="darkgreen">#23A393</color>
+    <color name="blue_tint">#0ebadc</color>
+    <color name="lightyellow">#F0F0F0</color>
+    <color name="greenthin">#7bc2a6</color>
+    <color name="semitransparent">#77000000</color>
+
+    <color name="yellow_light">#EBBF28</color>
+
+    <color name="PurpleDark">#8D00C1</color>
+    <color name="red">#DB4044</color>
+
+
+    <color name="dotEnabled">#aa4eed</color>
+    <color name="grey_morelight">#ccb4b4b4</color>
+    <color name="dotDisabled">#CC9E9E9E</color>
+
+    <array name="array_dot_active">
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+        <item>@color/dotEnabled</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+        <item>@color/dotDisabled</item>
+    </array>
+
+</resources>

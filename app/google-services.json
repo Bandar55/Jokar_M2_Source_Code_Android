@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "214702701381",
+    "firebase_url": "https://jokar-51486.firebaseio.com",
+    "project_id": "jokar-51486",
+    "storage_bucket": "jokar-51486.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214702701381:android:b9005d1a3ba20b4e",
+        "android_client_info": {
+          "package_name": "com.mobu.jokar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214702701381-aaeo8010shqrd8g7vg4eeifhchrl3hp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9IngInI9lZ2zTdRv_nStTYDhbw6EIi0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

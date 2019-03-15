@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpdatePhone">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/common_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivJokarLogo"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvUpdatePhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/logo" />
+
+
+    <com.mobu.jokar.view.RobotoRegularButton
+        android:id="@+id/updatePhoneSubmitBtn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_sign_in"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdatePhone" />
+
+    <com.mobu.jokar.view.RobotoRegularTextView
+        android:id="@+id/tvUpdatePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_edit_text"
+        android:drawableRight="@drawable/down_s"
+        android:drawablePadding="@dimen/dp_4"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp_10"
+        android:text="+000966"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintBottom_toTopOf="@+id/updatePhoneSubmitBtn"
+        app:layout_constraintEnd_toStartOf="@+id/edtNumberUpdatePhone"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivJokarLogo" />
+
+    <com.mobu.jokar.view.RobotoRegularEditText
+        android:id="@+id/edtNumberUpdatePhone"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_70"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_mobile_number"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvUpdatePhone"
+        app:layout_constraintTop_toTopOf="@+id/tvUpdatePhone" />
+
+
+</android.support.constraint.ConstraintLayout>
